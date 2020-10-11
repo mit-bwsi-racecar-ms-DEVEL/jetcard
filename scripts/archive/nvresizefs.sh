@@ -43,7 +43,7 @@ if [ -e "/proc/device-tree/model" ]; then
 	model="$(tr -d '\0' < /proc/device-tree/model)"
 fi
 
-if [ "${model}" != "jetson-nano" ]; then
+if [ "${model}" != "NVIDIA Jetson Nano Developer Kit" ]; then
 	cleanup
 	exit 0
 fi
